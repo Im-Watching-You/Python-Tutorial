@@ -8,9 +8,9 @@ def gener_A_Z_V1(given_num, text=''):
     """Version 1 with random.choice(string.ascii_letters)"""
     for i in range(given_num):
         if i % 2 == 0:
-            text += random.choice(string.ascii_letters[:26])
+            text += random.choice(string.ascii_lowercase)
         else:
-            text += random.choice(string.ascii_letters[26:])
+            text += random.choice(string.ascii_uppercase)
     print(text)
 
 
@@ -22,7 +22,6 @@ def gener_A_Z_V2(given_num, text=''):
         else:
             text += chr(random.randint(ord('A'), ord('Z')))
     print(text)
-
 
 # Execution
 num_letters = 10
