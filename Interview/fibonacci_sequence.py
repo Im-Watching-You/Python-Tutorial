@@ -7,13 +7,14 @@
 #     a, b = b, a + b
 
 
-# Fibonacci generator
 def fib(num):
+    """Fibonacci generator"""
     a, b = 0, 1
     for i in range(num):
         yield '{}: {}'.format(i+1, a)
         a, b = b, a + b
 
 
+# Execution
 for item in fib(10):
     print(item)

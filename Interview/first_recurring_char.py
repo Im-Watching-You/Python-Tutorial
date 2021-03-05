@@ -2,6 +2,7 @@
 
 
 def first_recurring(given_string):
+    """Get the first recurring char in a string"""
     counts = {}
     for char in given_string:
         if char in counts:
@@ -11,5 +12,6 @@ def first_recurring(given_string):
     return None
 
 
+# Execution
 string = 'ECDBACE'
 print(first_recurring(string))

@@ -23,6 +23,7 @@ def gener_A_Z_V2(given_num, text=''):
             text += chr(random.randint(ord('A'), ord('Z')))
     print(text)
 
+
 # Execution
 num_letters = 10
 gener_A_Z_V1(num_letters)

@@ -35,5 +35,4 @@ def nuw_ways(num):
 
 
 data = '12'     # data = [1 - 26] | [a - z]
-
 print(nuw_ways(data))
