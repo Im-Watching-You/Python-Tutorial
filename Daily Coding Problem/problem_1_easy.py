@@ -31,8 +31,20 @@ def add_up_to_k_v2(k, g_list, count=0):
         print("There are no numbers that return any two numbers from the list add up to k.")
 
 
+def add_up_to_k_v3(k, g_list):
+    """With O(n), which show True if two numbers from the list add up to k."""
+    potential_solutions = set()
+    for n in g_list:
+        if n in potential_solutions:
+            return True
+        potential_solutions.add(k - n)
+
+    return False
+
+
 # Execution
 equal = 17
 given_list = [10, 14, 3, 7, 1, 16, 2, 15]
-add_up_to_k_v1(equal, given_list)
-add_up_to_k_v2(equal, given_list)
+# add_up_to_k_v1(equal, given_list)
+# add_up_to_k_v2(equal, given_list)
+assert add_up_to_k_v3(equal, given_list)
