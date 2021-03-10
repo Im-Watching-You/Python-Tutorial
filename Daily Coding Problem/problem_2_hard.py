@@ -39,6 +39,6 @@ def product_array_v2(old_list):
 
 
 # Execution
-given_list = [1, 2, 3, 4, 5]
+given_list = [1, 2, 3, 4, 5, 6]
 print(product_array_v1(given_list))
 print(product_array_v2(given_list))
