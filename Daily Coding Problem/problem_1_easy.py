@@ -44,7 +44,7 @@ def add_up_to_k_v3(k, g_list):
 
 # Execution
 equal = 17
-given_list = [10, 14, 3, 7, 1, 16, 2, 15]
+given_list = [10, 14, 3, 7, 1, 16, 2, 1, 15]
 # add_up_to_k_v1(equal, given_list)
 # add_up_to_k_v2(equal, given_list)
 assert add_up_to_k_v3(equal, given_list)
