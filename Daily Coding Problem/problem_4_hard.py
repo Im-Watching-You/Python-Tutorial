@@ -29,7 +29,7 @@ def get_lost_value(g_list):
 
 
 # Execution
-given_list = [3, 2, -1, 1, 6, -3]
+given_list = [3, 2, -1, 1, 4, 6, -3]
 print(get_lost_value(given_list))
 
 assert get_lost_value([3, 4, -1, 1]) == 2
